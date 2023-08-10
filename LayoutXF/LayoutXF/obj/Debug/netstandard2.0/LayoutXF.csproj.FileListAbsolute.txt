@@ -1,0 +1,13 @@
+C:\GitHub\LayoutXF\LayoutXF\LayoutXF\bin\Debug\netstandard2.0\LayoutXF.deps.json
+C:\GitHub\LayoutXF\LayoutXF\LayoutXF\bin\Debug\netstandard2.0\LayoutXF.dll
+C:\GitHub\LayoutXF\LayoutXF\LayoutXF\bin\Debug\netstandard2.0\LayoutXF.pdb
+C:\GitHub\LayoutXF\LayoutXF\LayoutXF\obj\Debug\netstandard2.0\LayoutXF.csproj.AssemblyReference.cache
+C:\GitHub\LayoutXF\LayoutXF\LayoutXF\obj\Debug\netstandard2.0\LayoutXF.GeneratedMSBuildEditorConfig.editorconfig
+C:\GitHub\LayoutXF\LayoutXF\LayoutXF\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\GitHub\LayoutXF\LayoutXF\LayoutXF\obj\Debug\netstandard2.0\Views\TeamsPage.xaml.g.cs
+C:\GitHub\LayoutXF\LayoutXF\LayoutXF\obj\Debug\netstandard2.0\LayoutXF.AssemblyInfoInputs.cache
+C:\GitHub\LayoutXF\LayoutXF\LayoutXF\obj\Debug\netstandard2.0\LayoutXF.AssemblyInfo.cs
+C:\GitHub\LayoutXF\LayoutXF\LayoutXF\obj\Debug\netstandard2.0\LayoutXF.csproj.CoreCompileInputs.cache
+C:\GitHub\LayoutXF\LayoutXF\LayoutXF\obj\Debug\netstandard2.0\XamlC.stamp
+C:\GitHub\LayoutXF\LayoutXF\LayoutXF\obj\Debug\netstandard2.0\LayoutXF.dll
+C:\GitHub\LayoutXF\LayoutXF\LayoutXF\obj\Debug\netstandard2.0\LayoutXF.pdb

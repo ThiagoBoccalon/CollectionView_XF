@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="LayoutXF.Views.TeamsPage">
+    
+    <StackLayout Margin="5">        
+        <CollectionView ItemsSource="{Binding Teams}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Padding="8" 
+                          RowDefinitions="Auto,Auto" 
+                          ColumnDefinitions="Auto,Auto">
+                        <Image Grid.RowSpan="2"
+                               Source="{Binding ImageUrl}"
+                               Aspect="AspectFill"
+                               HeightRequest="40"
+                               WidthRequest="60"/>
+                        <Label Grid.Column="1"
+                               Text="{Binding Name}"
+                               FontSize="Large" TextColor="Blue" FontAttributes="Bold"/>
+                        <Label Grid.Row="1" Grid.Column="1"
+                               Text="{Binding Points}"
+                               FontAttributes="Bold"
+                               FontSize="Large"
+                               VerticalOptions="End"/>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>    
+    </StackLayout>
+</ContentPage>
