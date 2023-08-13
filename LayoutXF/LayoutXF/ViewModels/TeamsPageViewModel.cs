@@ -142,7 +142,14 @@ namespace LayoutXF.ViewModels
                 ImageUrl = "sao_paulo.jpg",
                 Points = 21,
                 Details = "São Bento - São Paulo  "
-            });            
+            });
+            source.Add(new Team
+            {
+                Name = "Gremio",
+                ImageUrl = "gremio.jpg",
+                Points = 20,
+                Details = "Imortal - Tricolor gaucho"
+            });
             source.Add(new Team
             {
                 Name = "Atlético-PR",
@@ -156,6 +163,13 @@ namespace LayoutXF.ViewModels
                 ImageUrl = "corinthians.jpg",
                 Points = 19,
                 Details = "São Jorge - São Paulo"
+            });
+            source.Add(new Team
+            {
+                Name = "Fluminense",
+                ImageUrl = "fluminense.jpg",
+                Points = 17,
+                Details = "Tricolor das Laranjeiras"
             });
 
             Teams = new ObservableCollection<Team>(source);

@@ -5,29 +5,44 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="LayoutXF.Views.TeamsPage">
     
-    <StackLayout Margin="5">        
-        <CollectionView ItemsSource="{Binding Teams}">
-            <CollectionView.ItemTemplate>
-                <DataTemplate>
-                    <Grid Padding="8" 
-                          RowDefinitions="Auto,Auto" 
-                          ColumnDefinitions="Auto,Auto">
-                        <Image Grid.RowSpan="2"
-                               Source="{Binding ImageUrl}"
-                               Aspect="AspectFill"
-                               HeightRequest="40"
-                               WidthRequest="60"/>
-                        <Label Grid.Column="1"
-                               Text="{Binding Name}"
-                               FontSize="Large" TextColor="Blue" FontAttributes="Bold"/>
-                        <Label Grid.Row="1" Grid.Column="1"
-                               Text="{Binding Points}"
-                               FontAttributes="Bold"
-                               FontSize="Large"
-                               VerticalOptions="End"/>
-                    </Grid>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>    
-    </StackLayout>
+    <ContentPage.Content>
+        <StackLayout Margin="20">
+            <Grid BackgroundColor="Moccasin" HeightRequest="90" VerticalOptions="Center">
+                <Grid RowDefinitions="Auto, Auto" 
+                      ColumnDefinitions="Auto, Auto">
+                    <Label Text="Last selection: " TextColor="Red" FontSize="Medium"/>
+                    <Label x:Name="previousSelectedItemLabel" Grid.Column="1"/>
+                    <Label Grid.Row="1" Text="Current Selection: " TextColor="Blue" FontSize="Medium"/>
+                    <Label x:Name="currenSelectedItemLabel" Grid.Row="1" Grid.Column="1"/>
+                </Grid>
+            </Grid>
+            <CollectionView ItemsSource="{Binding Teams}"
+                            SelectionMode="Single"
+                            SelectionChanged="OnCollectionViewSelectionChanged"
+                            BackgroundColor="Salmon"
+                            >
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Padding="8" 
+                              RowDefinitions="Auto,Auto" 
+                              ColumnDefinitions="Auto,Auto">
+                            <Image Grid.RowSpan="2"
+                                   Source="{Binding ImageUrl}"
+                                   Aspect="AspectFill"
+                                   HeightRequest="40"
+                                   WidthRequest="60"/>
+                            <Label Grid.Column="1"
+                                   Text="{Binding Name}"
+                                   FontSize="Large" TextColor="Blue" FontAttributes="Bold"/>
+                            <Label Grid.Row="1" Grid.Column="1"
+                                   Text="{Binding Points}"
+                                   FontAttributes="Bold"
+                                   FontSize="Large"
+                                   VerticalOptions="End"/>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+    </ContentPage.Content>
 </ContentPage>

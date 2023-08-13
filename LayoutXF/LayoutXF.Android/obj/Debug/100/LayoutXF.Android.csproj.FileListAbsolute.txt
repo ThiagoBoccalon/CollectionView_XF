@@ -666,3 +666,4 @@ C:\GitHub\LayoutXF\LayoutXF\LayoutXF.Android\obj\Debug\100\res\drawable\palmeira
 C:\GitHub\LayoutXF\LayoutXF\LayoutXF.Android\obj\Debug\100\res\drawable\parana.jpg
 C:\GitHub\LayoutXF\LayoutXF\LayoutXF.Android\obj\Debug\100\res\drawable\santos.jpg
 C:\GitHub\LayoutXF\LayoutXF\LayoutXF.Android\obj\Debug\100\res\drawable\sao_paulo.jpg
+C:\GitHub\LayoutXF\LayoutXF\LayoutXF.Android\obj\Debug\100\res\drawable\fluminense.jpg
