@@ -28,6 +28,7 @@ namespace LayoutXF
 
             containerRegistry.RegisterForNavigation<NavigationPage>();            
             containerRegistry.RegisterForNavigation<TeamsPage, TeamsPageViewModel>();
+            containerRegistry.RegisterForNavigation<TeamDetailPage, TeamDetailPageViewModel>();
         }
     }
 }

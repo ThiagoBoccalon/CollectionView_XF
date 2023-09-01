@@ -9,6 +9,7 @@ using System.Collections.ObjectModel;
 using System.Windows.Input;
 using Xamarin.Forms;
 using System.Runtime.CompilerServices;
+using LayoutXF.Views;
 
 namespace LayoutXF.ViewModels
 {
@@ -32,6 +33,8 @@ namespace LayoutXF.ViewModels
                 }
             }
         }
+
+        public ICommand NavigateCommand { get; set; }
 
         ObservableCollection<object> selectedTeams;
         public ObservableCollection<object> SelectedTeams
@@ -60,6 +63,12 @@ namespace LayoutXF.ViewModels
 
             selectedTeam = Teams.Skip(3).FirstOrDefault();
             TeamSelectionChanged();
+
+            NavigateCommand = new Command<Team>(async (item) =>
+            {
+                // Navigate to a new page with the selected item as a parameter
+                await Application.Current.MainPage.Navigation.PushAsync(new TeamDetailPage(item));
+            });
 
             SelectedTeams = new ObservableCollection<object>
             {

@@ -18,7 +18,7 @@
             </Grid>
             <CollectionView ItemsSource="{Binding Teams}"
                             SelectionMode="Single"
-                            SelectionChanged="OnCollectionViewSelectionChanged"
+                            SelectionChangedCommand="{Binding NavigateCommand}"
                             BackgroundColor="Salmon"
                             >
                 <CollectionView.ItemTemplate>
