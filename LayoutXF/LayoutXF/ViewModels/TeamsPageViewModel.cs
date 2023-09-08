@@ -30,6 +30,7 @@ namespace LayoutXF.ViewModels
                 if(selectedTeam != value)
                 {
                     selectedTeam = value;
+                    OnPropertyChanged(nameof(SelectedTeam));
                 }
             }
         }

@@ -18,6 +18,8 @@
             </Grid>
             <CollectionView ItemsSource="{Binding Teams}"
                             SelectionMode="Single"
+                            SelectionChanged="OnCollectionViewSelectionChanged"
+                            SelectedItem="{Binding SelectedTeam, Mode=TwoWay}"
                             SelectionChangedCommand="{Binding NavigateCommand}"
                             BackgroundColor="Salmon"
                             >
